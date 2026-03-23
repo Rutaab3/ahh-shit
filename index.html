@@ -428,6 +428,26 @@
                 font-size: 0.9rem;
             }
         }
+#text-card {
+  position: relative;
+}
+
+.overlay-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+#b-title, #b-date, #message-wrapper {
+  position: relative;
+  z-index: 2;
+  color: white; /* adjust text color for better visibility */
+}
+
     </style>
 </head>
 
@@ -444,14 +464,15 @@
 
     <button id="start-btn">Open Surprise</button>
 
-    <div class="text-container" id="text-card">
-        <h1 id="b-title"></h1>
-        <p class="date" id="b-date"></p>
-        <div id="message-wrapper">
-            <p class="message" id="b-msg"></p>
-        </div>
-
-    </div>
+    
+   <div class="text-container" id="text-card">
+  <img src="https://lh3.googleusercontent.com/d/1ZGZ9kkVGEfzMEz3ytlfr919mc1dwmTxf">                                                                
+  <h1 id="b-title"></h1>
+  <p class="date" id="b-date"></p>
+  <div id="message-wrapper">
+    <p class="message" id="b-msg"></p>
+  </div>
+</div>
 
     <div class="cake-stage" id="cake-stage" style="display:none;">
         <div class="candles-container" id="candles">

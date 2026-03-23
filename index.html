@@ -432,10 +432,10 @@
   position: relative;
 }
 
-img {
-  position: absolute;
-  top: 0;
-  left: 0;
+.image {
+display: flex;
+justify-content: center;
+align-items: center;
   width: 50%;
   height: 50%;
   object-fit: cover;
@@ -466,7 +466,7 @@ img {
 
     
    <div class="text-container" id="text-card">
-  <img src="https://lh3.googleusercontent.com/d/1ZGZ9kkVGEfzMEz3ytlfr919mc1dwmTxf">                                                                
+  <img class="image" src="https://lh3.googleusercontent.com/d/1ZGZ9kkVGEfzMEz3ytlfr919mc1dwmTxf">                                                                
   <h1 id="b-title"></h1>
   <p class="date" id="b-date"></p>
   <div id="message-wrapper">
